@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+*{
+   margin: 0;
+padding: 0; 
+box-sizing: border-box;}
+
+
+body {
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(30deg, #FE8402, #028482);
+    height: 100vh;
+
+}
+
+
+.quiz-app{
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+.quiz-app h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #8c8c8c;
+    color: rgb(13, 38, 63);
+
+}
+
+.quiz-app h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(13, 38, 63);
+}
+
+.btn {
+    width: 100%;
+    padding:10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #8c8c8c;
+    background-color: #fff;
+    text-align: left;
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+
+}
+/* // step 18 
+.btn:hover old css 
+.btn:disabled{
+    cursor:no-drop
+}
+*/
+
+.btn:hover:not([disabled]){
+    background-color: #222;
+    color: #fff;
+}
+/* // step 18 add here   */
+.btn:disabled{
+    cursor:no-drop
+}
+
+
+
+#next-btn{
+     background-color: #f48d26;
+    color: #fff;
+    width: 150px;
+    font-weight: 500;
+    border: 0;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 20px auto 0px;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    display: none;
+}
+
+/* js step 16 here  */ 
+
+.correct{
+background-color: #9aeabc
+;
+} .incorrect{
+    background-color: #ff9393
+
+}
